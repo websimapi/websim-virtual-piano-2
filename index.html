@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="recordBtn">● Record</button>
+        <button id="playBtn">▶ Play</button>
+        <button id="clearBtn">✖ Clear</button>
+    </div>
+    
+    <div class="piano">
+        <!-- White keys -->
+        <div data-note="C4" class="key white"></div>
+        <div data-note="D4" class="key white"></div>
+        <div data-note="E4" class="key white"></div>
+        <div data-note="F4" class="key white"></div>
+        <div data-note="G4" class="key white"></div>
+        <div data-note="A4" class="key white"></div>
+        <div data-note="B4" class="key white"></div>
+        
+        <!-- Black keys -->
+        <div data-note="C#4" class="key black"></div>
+        <div data-note="D#4" class="key black"></div>
+        <div data-note="F#4" class="key black"></div>
+        <div data-note="G#4" class="key black"></div>
+        <div data-note="A#4" class="key black"></div>
+    </div>
+
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
