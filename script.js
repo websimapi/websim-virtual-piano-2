@@ -30,7 +30,11 @@ document.addEventListener('keydown', (e) => {
 });
 
 document.addEventListener('keyup', (e) => {
-    const keyMap = { ... }; // Same as above
+    const keyMap = {
+        'a': 'C4', 's': 'D4', 'd': 'E4', 'f': 'F4',
+        'g': 'G4', 'h': 'A4', 'j': 'B4', 'w': 'C#4',
+        'e': 'D#4', 't': 'F#4', 'y': 'G#4', 'u': 'A#4'
+    };
     if (keyMap[e.key]) {
         const key = document.querySelector(`[data-note="${keyMap[e.key]}"]`);
         key.classList.remove('active');
@@ -104,4 +108,3 @@ function clearRecording() {
     recordedNotes = [];
     clearTimeout(playbackTimeout);
 }
-
